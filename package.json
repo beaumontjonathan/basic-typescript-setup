@@ -5,6 +5,9 @@
   "repository": "git@github.com:beaumontjonathan/basic-typescript-setup.git",
   "author": "beaumontjonathan <beaumont_jonny@hotmail.co.uk>",
   "license": "MIT",
+  "scripts": {
+    "build:ts": "yarn tsc"
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
