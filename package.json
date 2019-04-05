@@ -10,6 +10,9 @@
     "build:ts": "yarn tsc",
     "build:js": "babel ./src --out-dir build --source-maps --extensions \".ts,.tsx\"",
     "build": "yarn clean:build && yarn build:ts && yarn build:js",
+    "clean:dist": "rm -rf ./dist/*",
+    "dist:js": "babel ./src --out-dir dist --extensions \".ts,.tsx\"",
+    "dist": "yarn clean:dist && yarn dist:js",
     "test": "jest"
   },
   "devDependencies": {
