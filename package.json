@@ -6,7 +6,10 @@
   "author": "beaumontjonathan <beaumont_jonny@hotmail.co.uk>",
   "license": "MIT",
   "scripts": {
-    "build:ts": "yarn tsc"
+    "clean:build": "rm -rf ./build/*",
+    "build:ts": "yarn tsc",
+    "build:js": "babel ./src --out-dir build --source-maps --extensions \".ts,.tsx\"",
+    "build": "yarn clean:build && yarn build:ts && yarn build:js"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
