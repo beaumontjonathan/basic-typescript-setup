@@ -9,7 +9,8 @@
     "clean:build": "rm -rf ./build/*",
     "build:ts": "yarn tsc",
     "build:js": "babel ./src --out-dir build --source-maps --extensions \".ts,.tsx\"",
-    "build": "yarn clean:build && yarn build:ts && yarn build:js"
+    "build": "yarn clean:build && yarn build:ts && yarn build:js",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
@@ -18,7 +19,10 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.11",
+    "babel-jest": "^24.7.1",
     "babel-loader": "^8.0.5",
+    "jest": "^24.7.1",
     "typescript": "^3.4.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
