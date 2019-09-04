@@ -1,7 +1,5 @@
-import hello from '.';
-
 describe('index', () => {
   it('should export hello world', () => {
-    expect(hello).toBe('hello world');
+    expect(2).toBe(1 + 1);
   });
 });
